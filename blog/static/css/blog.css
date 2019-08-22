@@ -21,6 +21,7 @@ body {
 .content {
     margin-left: 40px;
 }
+
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
 }
@@ -42,7 +43,7 @@ h1, h2, h3, h4 {
     float: right;
     font-size: 26pt;
     margin-right: 20px;
- }
+}
 
 .post {
     margin-bottom: 70px;
