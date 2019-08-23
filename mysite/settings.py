@@ -125,4 +125,5 @@ STATIC_ROOT = "/home/ott45/my-first-blog/static/"
 
 STATICFILES_DIRS = [
     '/home/ott45/my-first-blog/static/css/',
+    '/home/ott45/my-first-blog/blog/static/css/'
 ]
