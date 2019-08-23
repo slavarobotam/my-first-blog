@@ -122,4 +122,4 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = "/home/ott45/my-first-blog/static"
 
-STATICFILES_DIRS = ( os.path.join('static'))
+STATICFILES_DIRS = ( os.path.join('static'),)
