@@ -25,7 +25,7 @@ SECRET_KEY = 'f&gf)l!5-^a)jotkx69p@vi(j@ka(5_yyas!#5kz98##ld#6$k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'chimichanga.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'ott45.pythonanywhere.com']
 
 # Application definition
 
@@ -119,3 +119,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
