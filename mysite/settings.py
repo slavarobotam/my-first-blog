@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f&gf)l!5-^a)jotkx69p@vi(j@ka(5_yyas!#5kz98##ld#6$k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'ott45.pythonanywhere.com']
 
@@ -73,13 +73,27 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+# MySQL settings
+# mysqlclient is required: pip install mysqlclient
+# First, go to MySQL and create database
+# e.g. 'db_mysql' using query 'create database db_mysql;'
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql', # do not change it
+        'NAME': 'ott45$default',  # add database_name
+        'USER' : 'ott45',  # add user_name
+        'PASSWORD' : 'zzzzzzzz',  # add password_here
+        'HOST' : 'ott45.mysql.pythonanywhere-services.com', # add host_name
+        'PORT' : '', # leave blank
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.10/ref/settings/#auth-password-validators
