@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'f&gf)l!5-^a)jotkx69p@vi(j@ka(5_yyas!#5kz98##ld#6$k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'ott45.pythonanywhere.com']
 
@@ -120,13 +120,15 @@ USE_TZ = True
 STATIC_URL = '/static/'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATIC_ROOT = "/home/ott45/my-first-blog/static/"
+#STATIC_ROOT = "/home/ott45/my-first-blog/static/"
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 STATICFILES_DIRS = [
-    #os.path.join(BASE_DIR, "static"),
-    '/home/ott45/my-first-blog/static/css/',
-    '/home/ott45/my-first-blog/blog/static/css/',
-    '/home/ott45/my-first-blog/static/admin/css'
+    os.path.join(BASE_DIR, "blog"),
+    #'/home/ott45/my-first-blog/static/css/',
+    #'/home/ott45/my-first-blog/static/admin/css/',
+    #'/home/ott45/my-first-blog/blog/static/css/'
+    #
 
 ]
